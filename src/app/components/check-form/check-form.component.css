@@ -1,0 +1,40 @@
+.all-body {
+  background-color: #452e8f;
+  height: 80vh;
+}
+.container {
+  background-color: #fff;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5vh;  
+    margin-bottom: 5vh;
+  }
+
+  .header img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+  .form {
+    align-items: center; 
+    margin: 0 auto; /* set left and right margins to auto */
+    width: 50%; /* set the width of the form */
+    margin-bottom: 5vh;
+  }
+
+.form button {
+    margin-left: 5%;
+}
+.form mat-label {
+    margin-right: 3%;
+}

@@ -1,0 +1,27 @@
+<div class="all-body">
+    <br>
+    <div class="container">
+        <div class="header">
+            <img src="../../../assets/logo.PNG" alt="Logo" />
+        </div>
+        <hr>
+        <mat-card>
+            <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <mat-label>Email:</mat-label>
+                <mat-form-field>
+                    <input type="email" matInput placeholder="Enter Email" formControlName="email" id="email"
+                        required />
+                    <mat-error *ngIf="loghasError('email', 'required')" style="color: red;">Email is
+                        Required</mat-error>
+                    <mat-error *ngIf="loghasError('email', 'pattern')" style="color: red;">Please use a correct
+                        Email</mat-error>
+                </mat-form-field>
+                <!-- <button type="submit" [disabled]="!loginForm.valid">Submit</button> -->
+                <button type="submit" [disabled]="loading" mat-raised-button color="primary">Generate</button>
+                <img *ngIf="loading"
+                    src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+            </form>
+            <br>
+        </mat-card>
+    </div>
+</div>

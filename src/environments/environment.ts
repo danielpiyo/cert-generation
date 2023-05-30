@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // base_url: 'http://207.180.243.185:4000/api/cert/verify',
+  base_url: 'http://online.riarauniversity.ac.ke:4000/api/cert/verify',
 };
 
 /*

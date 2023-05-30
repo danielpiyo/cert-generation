@@ -1,0 +1,46 @@
+<div class="all-body"> <br>
+  <div class="nav">
+    <div class="button-container">
+      <button mat-raised-button color="accent" (click)="generatePDF()">Download</button>
+    </div>
+  </div> <br>
+  <div id="data-certificate">
+    <div class="container">
+      <div class="header">
+        <img src="../../../assets/logo.PNG" alt="Logo" />
+      </div>
+      <hr />
+      <div class="certificate-title">
+        <h1>Certificate of Completion</h1>
+      </div>
+      <hr />
+      <div class="content">
+        <div class="certificate-content">
+          <p>This Certificate is awarded to</p>
+          <h2 class="name">{{ loggedInuser.student_Name }}</h2>
+          <section>
+            <p>for successfully completing</p>
+            <p>a training course on</p>
+            <p class="course">Data Protection</p>
+            <p>at Riara University.</p>
+          </section>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="left-column">
+
+          <p class="date">{{ loggedInuser.date | date: 'yyy-mm-dd'}}</p>
+          <hr />
+          <h4>DATE OF ISSUE</h4>
+        </div>
+        <div class="right-column">
+          <div id="qr-code">
+            <ngx-qrcode [elementType]="elementType" [errorCorrectionLevel]="correctionLevel"
+              [value]="verication_details" cssClass="bshadow">
+            </ngx-qrcode>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
