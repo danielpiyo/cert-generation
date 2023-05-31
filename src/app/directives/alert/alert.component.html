@@ -1,4 +1,4 @@
-<div *ngIf="message" [ngClass]="{ 'alert': message,
+<mat-card *ngIf="message" [ngClass]="{ 'alert': message,
     'alert-success': message.type === 'success',
      'alert-danger': message.type === 'error' }" style="text-align: center">
-    {{message.text}}</div>
+    {{message.text}}</mat-card>

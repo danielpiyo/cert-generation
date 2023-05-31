@@ -11,9 +11,9 @@
                 <mat-form-field>
                     <input type="email" matInput placeholder="Enter Email" formControlName="email" id="email"
                         required />
-                    <mat-error *ngIf="loghasError('email', 'required')" style="color: red;">Email is
+                    <mat-error *ngIf="logHasError('email', 'required')" style="color: red;">Email is
                         Required</mat-error>
-                    <mat-error *ngIf="loghasError('email', 'pattern')" style="color: red;">Please use a correct
+                    <mat-error *ngIf="logHasError('email', 'pattern')" style="color: red;">Please use a correct
                         Email</mat-error>
                 </mat-form-field>
                 <!-- <button type="submit" [disabled]="!loginForm.valid">Submit</button> -->

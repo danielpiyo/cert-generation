@@ -1,7 +1,14 @@
 <div class="all-body"> <br>
   <div class="nav">
     <div class="button-container">
-      <button mat-raised-button color="accent" (click)="generatePDF()">Download</button>
+      <button mat-raised-button color="accent" (click)="generatePDF()">
+        <mat-icon>get_app</mat-icon>
+        Download</button>
+    </div> <br>
+    <div class="button-container">
+      <button mat-raised-button color="accent" (click)="logOut()">
+        <mat-icon>lock</mat-icon>
+        LogOut</button>
     </div>
   </div> <br>
   <div id="data-certificate">
@@ -29,7 +36,7 @@
       <div class="footer">
         <div class="left-column">
 
-          <p class="date">{{ loggedInuser.date | date: 'yyy-mm-dd'}}</p>
+          <p class="date">{{ loggedInuser.date | date: 'yyy-MM-dd'}}</p>
           <hr />
           <h4>DATE OF ISSUE</h4>
         </div>
