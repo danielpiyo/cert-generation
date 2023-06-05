@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.verication_details = `Name-${this.loggedInuser.student_Name}, Code - RUDP${this.loggedInuser.user_ID}`;
+    this.verication_details = `Name-${this.loggedInuser.student_Name}, Code - RUDP${this.loggedInuser.user_ID}, web: www.riarauniversity.ac.ke`;
   }
 
   generatePDF() {
@@ -50,10 +50,11 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   logOut() {
     this.loginService.logout();
-    this.router.navigate(['/']);
+    this.router.navigate(['']);
   }
 
   ngOnDestroy(): void {
     this.loginService.logout();
+    this.router.navigate(['']);
   }
 }

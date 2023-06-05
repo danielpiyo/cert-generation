@@ -22,29 +22,12 @@ export class AuthGuard implements CanActivate {
     }
   }
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    //   if (this.loggedInuser.status === 'completed') {
-    //     // logged in so return true
-    //     return true;
-    //   }
-    //   // not logged in so redirect to login page with the return url
-    //   this.router.navigate([''], { queryParams: { returnUrl: state.url } });
-    //   return false;
-    // }
-    switch (this.loggedInUser.status) {
-      case 'completed':
-        // logged in, so return true
-        return true;
-      case 'incomplete':
-        // not completed course
-        this.alertService.error(
-          `Sorry ${this.loggedInUser.student_Name}, You have not completed the Course`
-        );
-        this.router.navigate([''], { queryParams: { returnUrl: state.url } });
-        return false;
-      default:
-        // not logged in, so redirect to login page with the return url
-        this.router.navigate([''], { queryParams: { returnUrl: state.url } });
-        return false;
+    if (this.loggedInUser.status === 'completed') {
+      // logged in so return true
+      return true;
     }
+    // not logged in so redirect to login page with the return url
+    this.router.navigate([''], { queryParams: { returnUrl: state.url } });
+    return false;
   }
 }

@@ -1,4 +1,5 @@
 <mat-card *ngIf="message" [ngClass]="{ 'alert': message,
     'alert-success': message.type === 'success',
-     'alert-danger': message.type === 'error' }" style="text-align: center">
+    'alert-warning': message.type === 'warning',
+    'alert-danger': message.type === 'error' }" style="text-align: center">
     {{message.text}}</mat-card>
