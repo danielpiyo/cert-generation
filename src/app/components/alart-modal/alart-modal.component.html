@@ -1,0 +1,12 @@
+<div class="modal">
+    <h2>RU Quick Alert !!!</h2>
+    <hr>
+    <mat-card *ngIf="data" [ngClass]="{ 'alert': message,
+    'alert-success': data.type === 'success',
+    'alert-warning': data.type === 'warning',
+    'alert-danger': data.type === 'error' }" style="text-align: center">
+        {{data.message}}
+        <hr>
+        <button mat-raised-button color="primary" (click)="closeModal()">OK</button>
+    </mat-card>
+</div>

@@ -4,37 +4,46 @@
 }
 .container {
   background-color: #fff;
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-top: 5vh;  
-    margin-bottom: 5vh;
-  }
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.head-name {
+  background-color: #a21984;
+  color: #fff;
+  text-align: center;
+  height: 4vh;
+}
+.head-name h3 {
+  font-size: large;
+  font-weight: 700;
+  font-family: "Goudy Old Style Regular";
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
 
-  .header img {
-    max-width: 100%;
-    height: auto;
-    
-  }
+.header img {
+  max-width: 100%;
+  height: auto;
+}
 
-  .form {
-    align-items: center; 
-    margin: 0 auto; /* set left and right margins to auto */
-    width: 50%; /* set the width of the form */
-    margin-bottom: 5vh;
-  }
+.form {
+  align-items: center;
+  margin: 0 auto; /* set left and right margins to auto */
+  width: 50%; /* set the width of the form */
+  margin-bottom: 5vh;
+}
 
 .form button {
-    margin-left: 5%;
+  margin-left: 5%;
 }
 .form mat-label {
-    margin-right: 3%;
+  margin-right: 3%;
 }

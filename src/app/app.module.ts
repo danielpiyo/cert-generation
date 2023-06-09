@@ -16,6 +16,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { ValidateComponent } from './components/validate/validate.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AlertComponent } from './directives/alert/alert.component';
+import { AlartModalComponent } from './components/alart-modal/alart-modal.component';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { AlertService } from './services/alert.service';
+import { DataService } from './services/data.service';
+import { AppService } from './services/app.service';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -23,6 +29,7 @@ import { AlertComponent } from './directives/alert/alert.component';
     HomeComponent,
     CheckFormComponent,
     AlertComponent,
+    AlartModalComponent,
     // ValidateComponent,
   ],
   imports: [
@@ -35,11 +42,22 @@ import { AlertComponent } from './directives/alert/alert.component';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDialogModule,
     MatIconModule,
     BrowserAnimationsModule,
     HttpClientModule,
   ],
-  providers: [],
+  entryComponents: [AlartModalComponent],
+  providers: [
+    {
+      provide: MatDialogRef,
+      useValue: {},
+    },
+    AlertService,
+    DataService,
+    AppService,
+    DatePipe,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

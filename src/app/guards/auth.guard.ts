@@ -6,28 +6,33 @@ import {
   RouterStateSnapshot,
   UrlTree,
 } from '@angular/router';
-import { Observable } from 'rxjs';
-import { User } from '../models/user.model';
+
 import { AlertService } from '../services/alert.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthGuard implements CanActivate {
-  loggedInUser: User;
-  constructor(private router: Router, private alertService: AlertService) {
-    this.loggedInUser = JSON.parse(`${localStorage.getItem('currentUser')}`);
-    if (this.loggedInUser === null) {
-      this.router.navigate(['/']);
-    }
-  }
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    if (this.loggedInUser.status === 'completed') {
-      // logged in so return true
+  constructor(private router: Router, private alertService: AlertService) {}
+
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): boolean {
+    console.log('AuthGuard canActivate method called');
+
+    const loggedInUser = JSON.parse(
+      localStorage.getItem('currentUser') || '{}'
+    );
+    // console.log('User:', loggedInUser);
+
+    if (loggedInUser && loggedInUser.status === 'completed') {
+      // console.log('Authentication passed. Allowing access.');
       return true;
     }
-    // not logged in so redirect to login page with the return url
-    this.router.navigate([''], { queryParams: { returnUrl: state.url } });
+
+    // console.log('Authentication failed. Redirecting to login page.');
+    this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } });
     return false;
   }
 }

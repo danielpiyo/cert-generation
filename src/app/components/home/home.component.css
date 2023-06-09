@@ -6,183 +6,197 @@
 
 .container {
   background-color: #fff;
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 15px;
-    border: 1px solid #ccc;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-top: 5vh;  
-    margin-bottom: 5vh;
-  }
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 0px solid #fff;
+}
 
-  .header img {
-    max-width: 100%;
-    height: auto;
-    
-  }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
 
-  .header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .content {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    margin-top: 40px;
-    margin-bottom: 60px;
-    text-align: center;
-  }
+.header img {
+  max-width: 100%;
+  height: auto;
+}
 
-  
-  hr {
-    border: none;
-    border-top: 1.6px solid rgb(180 71 157);
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .certificate {
-    width: 100%;
-    position: relative;
-    margin-top: 50px;
-  }
-  
-  .certificate-title {
-    margin-top: 60px;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  
-  .certificate-title h1 {
-    font-size: 45px;
-    font-weight:50;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-family: "Trajan Pro Regular";
-    color: rgb(72 49 141);;
-  }
-  
-  .certificate-content p {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .certificate-content section p {
-    font-size: 26px;
-    line-height: 0.8;
-  }
-  
-  .course {
-    font-weight: bolder;
-  }
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
 
-  .certificate-content h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: "Kingthings Calligraphica 2 Regular";
-    color: rgb(168 7 7);
-  }
-  .certificate-content p {
-    font-family: "Goudy Old Style Regular";
-  }
+.content {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin-top: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
 
-  .name {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .date {
-    font-weight: bold;
-    margin-top: 30px;
-    font-family: "Gotham Bold";
-    text-align: center;
-    /* text-decoration: underline;
+hr {
+  border: none;
+  border-top: 1.6px solid rgb(180 71 157);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.certificate {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.certificate-title {
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.certificate-title h1 {
+  font-size: 45px;
+  font-weight: 50;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Trajan Pro Regular";
+  color: rgb(72 49 141);
+}
+
+.certificate-content p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.certificate-content section p {
+  font-size: 26px;
+  line-height: 0.8;
+}
+
+.course {
+  font-weight: bolder;
+}
+
+.certificate-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Kingthings Calligraphica 2 Regular";
+  color: rgb(168 7 7);
+}
+.certificate-content p {
+  font-family: "Goudy Old Style Regular";
+}
+
+.name {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.date {
+  font-weight: bold;
+  margin-top: 90px;
+  font-family: "Gotham Bold";
+  text-align: center;
+  /* text-decoration: underline;
     text-decoration-color: rgb(173, 173, 173); */
-  }
-  
-  .left-column {
-    margin-bottom: 40px;
-    margin-top: 40px;
-    margin-left: 10%;
-    min-width: 200px;
-    line-height: 0.3;
-  }
-  /* .left-column img {
+}
+
+.left-column {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: 3%;
+  min-width: auto;
+  line-height: 0.3;
+}
+
+.data-position {
+  margin-top: 90px;
+}
+.data-position2 {
+  margin-top: 90px;
+}
+.data-position img {
+  height: 8vh;
+  width: 14vw;
+}
+.data-position h3 {
+  margin-top: -5px;
+}
+/* .left-column img {
     max-width: 200px;
     display: block;
     margin: 0 auto;
   } */
-  
-  .right-column {
-    max-width: 60%;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    margin-right: 10%;
-  }
-  
-  .right-column h2 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .right-column h3 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .right-column p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;   
-    margin-bottom: -30px;
-    /* text-align: center; */
-  }
-  
-  .left-column hr{
-    border: none;
-    border-top: 2px solid rgb(216 217 219);;
-    width: 100%;
-  }
-  .footer p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .footer h4 {
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .bshadow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: drop-shadow(5px 5px 5px #222222);
-    opacity: .5;    
-    font-size: smaller;
-  }
 
-  .issue-no {
-    align-items:end;
-  }
+.right-column {
+  max-width: 60%;
+  margin-bottom: 40px;
+  margin-top: 75px;
+  margin-right: 2%;
+}
 
-  /* .nav {
+.right-column h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.right-column h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.right-column p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: -30px;
+  /* text-align: center; */
+}
+
+.left-column hr {
+  margin-top: -10px;
+  border: none;
+  border-top: 2px solid rgb(216 217 219);
+  width: 100%;
+}
+.footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer h3 {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Goudy Old Style Regular";
+}
+
+.bshadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 5px #222222);
+  opacity: 0.5;
+  font-size: smaller;
+}
+
+.issue-no {
+  align-items: end;
+}
+
+/* .nav {
     margin-top: 5vh;
     position: fixed;
     top: 0;
@@ -197,7 +211,7 @@
     display: inline-block;
   } */
 
-  /* .button-container button {
+/* .button-container button {
     background-color: #ccc;
   color: #fff;
   padding: 10px 20px;
@@ -205,19 +219,19 @@
   border-radius: 4px;
   } */
 
-  .nav {
-    padding: 15px;
-    position: fixed;
-    /* top: 0; */
-    /* left: 0; */
-    right: 0;
-    /* height: 100px; */
-    background-color:transparent;
-    /* z-index: 999; */
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
-  }
-  
-  .button-container {
-    float: right;
-    margin: 10px;
-  }
+.nav {
+  padding: 15px;
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  right: 0;
+  /* height: 100px; */
+  background-color: transparent;
+  /* z-index: 999; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.button-container {
+  float: right;
+  margin: 10px;
+}

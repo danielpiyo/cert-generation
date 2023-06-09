@@ -35,10 +35,18 @@
       </div>
       <div class="footer">
         <div class="left-column">
+          <div class="data-position">
+            <img src="../../../assets/signature.png" alt="Registrar" />
+            <!-- <p class="date">{{ loggedInuser.date | date: 'yyy-MM-dd'}}</p> -->
+            <hr />
+            <h3>Jacqueline Kaniu <br> DPO</h3>
 
-          <p class="date">{{ loggedInuser.date | date: 'yyy-MM-dd'}}</p>
-          <hr />
-          <h4>DATE OF ISSUE</h4>
+          </div>
+        </div>
+        <div class="data-position2">
+          <p class="date">{{ formatDateWithSuffix(loggedInuser.date) }}</p>
+          <!-- <hr /> -->
+          <h3>Certificate code: RUDP{{loggedInuser.user_ID}}</h3>
         </div>
         <div class="right-column">
           <div id="qr-code">
@@ -48,6 +56,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <br>
   </div>
 </div>

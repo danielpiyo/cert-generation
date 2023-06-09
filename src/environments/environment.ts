@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   // base_url: 'http://207.180.243.185:4000/api/cert/verify',
-  base_url: 'http://75.119.135.31:4000/api/cert/verify',
-  // base_url: 'http://online.riarauniversity.ac.ke:4000/api/cert/verify', 75.119.135.31
+  // base_url: 'http://75.119.135.31:4000/api/cert/verify',
+  base_url: 'https://online.riarauniversity.ac.ke:4096/api/cert/verify',
 };
 
 /*
